@@ -8,6 +8,7 @@ let c1 = new Complex(1, 1);
 let c2 = new Complex(-2, 0);
 let c3 = Complex.eval(c1 * c1 + c2); // Object { real: -2, imag: 2 }
 ```
+This works by giving each class instance an id and then using `valueOf` to encode it as `p ** (p ** _id)`.
 
 ## Details
 
